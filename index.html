@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dinesh Kannan – Software Engineer portfolio">
+    <meta name="description" content="Dinesh Kannan – Software Engineer">
     <meta name="author" content="Dinesh Kannan">
-    <title>Dinesh Kannan · Software Engineer</title>
+    <title>Dinesh Kannan</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101239323-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -27,531 +22,242 @@
 </head>
 <body>
 
-<!-- ===== HERO / HEADER ===== -->
-<header class="hero">
-    <div class="hero-bg"></div>
-    <nav class="nav">
-        <div class="nav-inner container">
-            <span class="nav-logo">DK</span>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="mailto:dinesh.kannan@gmail.com" class="nav-cta">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="nav" id="top-nav">
+    <div class="container nav-inner">
+        <a class="nav-name" href="#top">Dinesh Kannan</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#publications">Publications</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
 
-    <div class="hero-content container">
-        <div class="hero-avatar">
-            <img src="assets/images/Profile.png" alt="Dinesh Kannan" />
-        </div>
-        <div class="hero-text">
-            <p class="hero-eyebrow">Hello, I'm</p>
-            <h1 class="hero-name">Dinesh Kannan</h1>
-            <p class="hero-title">Software Engineer</p>
-            <p class="hero-tagline">
-                Full-stack engineer with a passion for building scalable systems, IoT platforms, and data-driven products.
-                Currently based in the United States.
-            </p>
-            <div class="hero-actions">
-                <a href="assets/files/Dinesh'17.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-                </a>
-                <a href="mailto:dinesh.kannan@gmail.com" class="btn btn-outline">
-                    <i class="fa-solid fa-paper-plane"></i> Get In Touch
-                </a>
-            </div>
-            <ul class="hero-social">
-                <li>
-                    <a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.github.com/kdin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:dinesh.kannan@gmail.com" aria-label="Email">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </li>
+<!-- PROFILE HEADER -->
+<header class="profile-header" id="top">
+    <div class="container profile-inner">
+        <img class="profile-photo" src="assets/images/Profile.png" alt="Dinesh Kannan" />
+        <div class="profile-text">
+            <h1 class="profile-name">Dinesh Kannan</h1>
+            <p class="profile-title">Software Engineer</p>
+            <ul class="profile-links">
+                <li><a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer">linkedin.com/in/dineshkan</a></li>
+                <li><a href="https://github.com/kdin" target="_blank" rel="noopener noreferrer">github.com/kdin</a></li>
+                <li><a href="mailto:dinesh.kannan@gmail.com">dinesh.kannan@gmail.com</a></li>
             </ul>
         </div>
+        <a class="resume-btn" href="assets/files/Dinesh'17.pdf" target="_blank">Download Resume</a>
     </div>
-
-    <div class="hero-scroll-hint" aria-hidden="true">
-        <span></span>
-    </div>
+    <div class="profile-divider"></div>
 </header>
 
-<main>
+<main class="container main-content">
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section section-light">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Who I am</span>
-            <h2 class="section-title">About Me</h2>
-        </div>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>
-                    I'm a software engineer with a Master's degree in Computer Science from
-                    <strong>Northeastern University, Boston</strong> and a broad background spanning
-                    full-stack web development, IoT platforms, machine learning, and big data.
-                </p>
-                <p>
-                    Over the years I've had the opportunity to build everything from voice-activated smart-home
-                    products (Amazon Alexa / AWS Lambda), enterprise analytics dashboards, cloud-native REST APIs,
-                    to AI research tools — always with a focus on clean code, automated testing and scalable architecture.
-                </p>
-                <p>
-                    I thrive at the intersection of product thinking and engineering precision. I enjoy connecting
-                    with people who share a passion for technology and continuous learning.
-                </p>
-                <div class="about-meta">
-                    <div class="about-meta-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span>United States</span>
-                    </div>
-                    <div class="about-meta-item">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer">linkedin.com/in/dineshkan</a>
-                    </div>
-                    <div class="about-meta-item">
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/kdin" target="_blank" rel="noopener noreferrer">github.com/kdin</a>
-                    </div>
-                </div>
-            </div>
-            <div class="about-stats">
-                <div class="stat-card">
-                    <span class="stat-number">8+</span>
-                    <span class="stat-label">Years of Experience</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Technologies</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">MS</span>
-                    <span class="stat-label">Computer Science</span>
-                </div>
-                <div class="stat-card">
-                    <span class="stat-number">1</span>
-                    <span class="stat-label">Publication</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="section section-dark">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Career</span>
-            <h2 class="section-title">Work Experience</h2>
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Software Engineer Intern</h3>
-                            <p class="timeline-company">
-                                <a href="https://www.keenhome.io/" target="_blank" rel="noopener noreferrer">Keen Home</a>
-                                · New York, US
-                            </p>
-                        </div>
-                        <span class="timeline-period">May 2017 – Sep 2017</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>Incorporated Amazon Alexa's voice capabilities to smart vents – first of its kind in the industry</li>
-                        <li>Built a fully functional Alexa skill adapter with automated tests as an AWS Lambda function in Node.js</li>
-                        <li>Improved platform integration by contributing to the company's OAuth testing efforts in Node.js</li>
-                        <li>Achieved full code/branch coverage of core IoT platform services using JavaScript</li>
-                        <li>Automated Docker container management through scripts handling git versioning, tags and releases</li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">Alexa SDK</span><span class="tag">IoT</span><span class="tag">Docker</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Teaching Assistant</h3>
-                            <p class="timeline-company">
-                                <a href="https://www.khoury.northeastern.edu/" target="_blank" rel="noopener noreferrer">Khoury College of CS, Northeastern University</a>
-                                · Boston, US
-                            </p>
-                        </div>
-                        <span class="timeline-period">Jan 2017 – Apr 2017</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>TA for CS2800: Logic and Computation</li>
-                        <li>Tutored 80 students in writing elegant, clean code in ACL2s (a LISP dialect)</li>
-                        <li>Helped students develop understanding of programming paradigms and logical reasoning</li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">ACL2s / LISP</span><span class="tag">Logic</span><span class="tag">Mentoring</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Software Engineer Intern</h3>
-                            <p class="timeline-company">
-                                <a href="https://www.cleanharbors.com/" target="_blank" rel="noopener noreferrer">Clean Harbors Inc.</a>
-                                · Boston, US
-                            </p>
-                        </div>
-                        <span class="timeline-period">Jul 2016 – Dec 2016</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>Initiated development of an internal analytics app to monitor employee work expenses, improving cost-cutting decisions — middleware in C#, frontend in AngularJS, database in MS-SQL</li>
-                        <li>Reduced data storage by 30% by building a web app to control production log growth, cutting manual effort by 95%</li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">C#</span><span class="tag">AngularJS</span><span class="tag">MS-SQL</span><span class="tag">ASP.NET</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Research Assistant</h3>
-                            <p class="timeline-company">
-                                <a href="https://www.northeastern.edu/games/" target="_blank" rel="noopener noreferrer">Playable Innovative Technologies Lab, Northeastern</a>
-                                · Boston, US
-                            </p>
-                        </div>
-                        <span class="timeline-period">Jan 2016 – Jul 2016</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>Built and deployed a cloud app from scratch to manage gameplay, scores, levels and payments using the MEAN stack behind Nginx</li>
-                        <li>Designed a RESTful logging service for gameplay data using Node.js / MongoDB</li>
-                        <li>Improved play rates by redesigning key game elements in ActionScript</li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">MEAN Stack</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Nginx</span><span class="tag">Python</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Software Developer Intern</h3>
-                            <p class="timeline-company">
-                                <a href="https://www.visualbi.com/" target="_blank" rel="noopener noreferrer">Visual BI Solutions</a>
-                                · Chennai, IN
-                            </p>
-                        </div>
-                        <span class="timeline-period">Dec 2014 – Apr 2015</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>Replaced manual staff clock-in system with an automated web app for logging and monitoring</li>
-                        <li>Added data visualizations in SAP Lumira by developing CVOM extensions</li>
-                        <li>Simplified live data imports into SAP Lumira by building data access extensions</li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">SAP Lumira</span><span class="tag">CVOM</span><span class="tag">JavaScript</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-marker"></div>
-                <div class="timeline-card">
-                    <div class="timeline-card-head">
-                        <div>
-                            <h3 class="timeline-role">Research Assistant</h3>
-                            <p class="timeline-company">
-                                School of Computing, SASTRA University · Thanjavur, IN
-                            </p>
-                        </div>
-                        <span class="timeline-period">Aug 2013 – Jul 2014</span>
-                    </div>
-                    <ul class="timeline-bullets">
-                        <li>Designed a novel data-hiding algorithm improving security using Burrows-Wheeler Transform (BWT)</li>
-                        <li>Researched various compression algorithms for data compaction in data hiding</li>
-                        <li>Published findings in Indian Journal of Science and Technology (INDJST)
-                            <a href="https://goo.gl/US9GN8" target="_blank" rel="noopener noreferrer"> — read paper</a>
-                        </li>
-                    </ul>
-                    <div class="timeline-tags">
-                        <span class="tag">Algorithms</span><span class="tag">Cryptography</span><span class="tag">Research</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section section-light">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Work</span>
-            <h2 class="section-title">Latest Projects</h2>
-        </div>
-
-        <div class="projects-grid">
-
-            <article class="project-card project-card--featured">
-                <div class="project-card-img">
-                    <img src="assets/images/projects/project-1.jpg" alt="Machine Learning Experiments" loading="lazy">
-                    <div class="project-card-overlay">
-                        <a href="https://github.com/kdin/MachineLearning" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                            <i class="fa-brands fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-card-tags">
-                        <span class="tag tag--accent">Machine Learning</span>
-                        <span class="tag tag--accent">Python</span>
-                    </div>
-                    <h3 class="project-card-title">
-                        <a href="https://github.com/kdin/MachineLearning" target="_blank" rel="noopener noreferrer">Machine Learning Experiments</a>
-                    </h3>
-                    <p class="project-card-desc">
-                        Explorations of statistical and machine learning techniques on disease datasets.
-                        Analysed Heart Disease and Prostate Cancer datasets using Linear &amp; Logistic Regression,
-                        Lasso / Ridge regularisation, LDA, ROC plots and box-plot outlier detection.
-                    </p>
-                    <div class="project-card-links">
-                        <a href="https://github.com/kdin/MachineLearning/blob/master/HeartDiseaseDataset.ipynb" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Heart Disease Notebook
-                        </a>
-                        <a href="https://github.com/kdin/MachineLearning/blob/master/ProstateCancerDataset.ipynb" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Prostate Cancer Notebook
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="assets/images/projects/project-2.jpg" alt="MBTA Billing System" loading="lazy">
-                    <div class="project-card-overlay"></div>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-card-tags">
-                        <span class="tag">ETL</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">ASP.NET</span>
-                    </div>
-                    <h3 class="project-card-title">MBTA Postpaid Billing System</h3>
-                    <p class="project-card-desc">
-                        Cloud-based postpaid billing and card management solution for the Massachusetts Bay
-                        Transportation Authority's corporate rider program. Managed cards and automated monthly billing
-                        for a segment of riders — built with Informatica (ETL), C# and ASP.NET.
-                    </p>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-card-img">
-                    <img src="assets/images/projects/project-3.jpg" alt="Pac-Man AI" loading="lazy">
-                    <div class="project-card-overlay">
-                        <a href="https://github.com/kdin/AI-Projects" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
-                            <i class="fa-brands fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card-body">
-                    <div class="project-card-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">AI</span>
-                    </div>
-                    <h3 class="project-card-title">
-                        <a href="https://github.com/kdin/AI-Projects" target="_blank" rel="noopener noreferrer">Pac-Man AI Projects</a>
-                    </h3>
-                    <p class="project-card-desc">
-                        Implementation of various AI algorithms (search, adversarial, reinforcement learning)
-                        for UC Berkeley's CS188 course. Final project: sentiment classifier for movie reviews
-                        using text classification models.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-    </div>
-</section>
-
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section section-dark">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Toolbox</span>
-            <h2 class="section-title">Skills</h2>
-        </div>
-
-        <div class="skills-groups">
-
-            <div class="skills-group">
-                <h3 class="skills-group-title"><i class="fa-solid fa-code"></i> Languages</h3>
-                <div class="skill-chips">
-                    <span class="chip chip--strong">JavaScript / Node.js</span>
-                    <span class="chip chip--strong">Python</span>
-                    <span class="chip chip--strong">Java</span>
-                    <span class="chip">C#</span>
-                    <span class="chip">SQL</span>
-                    <span class="chip">HTML / CSS</span>
-                </div>
-            </div>
-
-            <div class="skills-group">
-                <h3 class="skills-group-title"><i class="fa-solid fa-layer-group"></i> Frameworks &amp; Libraries</h3>
-                <div class="skill-chips">
-                    <span class="chip chip--strong">React</span>
-                    <span class="chip chip--strong">AngularJS</span>
-                    <span class="chip chip--strong">Express.js</span>
-                    <span class="chip">ASP.NET</span>
-                    <span class="chip">scikit-learn</span>
-                    <span class="chip">NumPy / Pandas</span>
-                </div>
-            </div>
-
-            <div class="skills-group">
-                <h3 class="skills-group-title"><i class="fa-solid fa-cloud"></i> Cloud &amp; DevOps</h3>
-                <div class="skill-chips">
-                    <span class="chip chip--strong">AWS (Lambda, IoT)</span>
-                    <span class="chip chip--strong">Docker</span>
-                    <span class="chip">Nginx</span>
-                    <span class="chip">Git / GitHub</span>
-                    <span class="chip">CI/CD</span>
-                </div>
-            </div>
-
-            <div class="skills-group">
-                <h3 class="skills-group-title"><i class="fa-solid fa-database"></i> Data &amp; Big Data</h3>
-                <div class="skill-chips">
-                    <span class="chip chip--strong">MongoDB</span>
-                    <span class="chip chip--strong">MS-SQL</span>
-                    <span class="chip">Apache Spark</span>
-                    <span class="chip">MapReduce</span>
-                    <span class="chip">Informatica ETL</span>
-                </div>
-            </div>
-
-        </div>
-
-        <p class="skills-more">
-            <a href="assets/files/Dinesh'17.pdf" target="_blank" class="link-arrow">
-                <i class="fa-solid fa-file-lines"></i> View full resume
-            </a>
-            &nbsp;&nbsp;
-            <a href="https://github.com/kdin" target="_blank" rel="noopener noreferrer" class="link-arrow">
-                <i class="fa-brands fa-github"></i> Browse my code on GitHub
-            </a>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2 class="section-heading">About</h2>
+        <p>
+            Software engineer with a Master of Science in Computer Science from Northeastern University, Boston.
+            I have built systems across IoT platforms, enterprise analytics, cloud-native APIs, and machine
+            learning — with an emphasis on clean code, automated testing, and scalable architecture.
         </p>
-    </div>
-</section>
+        <p>
+            My interests sit at the intersection of product thinking and engineering precision.
+        </p>
+    </section>
 
-<!-- ===== EDUCATION ===== -->
-<section id="education" class="section section-light">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Background</span>
-            <h2 class="section-title">Education &amp; Publications</h2>
+    <hr class="divider">
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <h2 class="section-heading">Experience</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Software Engineer Intern</h3>
+                    <p class="entry-org"><a href="https://www.keenhome.io/" target="_blank" rel="noopener noreferrer">Keen Home</a> &middot; New York, US</p>
+                </div>
+                <time class="entry-date">May 2017 &ndash; Sep 2017</time>
+            </div>
+            <ul class="entry-bullets">
+                <li>Incorporated Amazon Alexa voice capabilities into smart vents &mdash; first of its kind in the industry</li>
+                <li>Built a fully functional Alexa skill adapter with automated tests as an AWS Lambda function in Node.js</li>
+                <li>Improved platform integration through OAuth testing in Node.js and full code/branch coverage of core IoT services</li>
+                <li>Automated Docker container management through scripts handling git versioning, tags and releases</li>
+            </ul>
         </div>
 
-        <div class="edu-grid">
-
-            <div class="edu-cards">
-                <div class="edu-card">
-                    <div class="edu-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="edu-card-body">
-                        <h3 class="edu-degree">Master of Science, Computer Science</h3>
-                        <p class="edu-school">Northeastern University, Boston</p>
-                        <p class="edu-meta">2015 – 2017 &nbsp;·&nbsp; GPA 3.8 / 4.0</p>
-                        <p class="edu-focus">Specialisation: Software Development, Machine Learning &amp; Big Data</p>
-                    </div>
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Teaching Assistant &mdash; CS2800: Logic and Computation</h3>
+                    <p class="entry-org"><a href="https://www.khoury.northeastern.edu/" target="_blank" rel="noopener noreferrer">Khoury College of Computer Sciences, Northeastern University</a> &middot; Boston, US</p>
                 </div>
-
-                <div class="edu-card">
-                    <div class="edu-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <div class="edu-card-body">
-                        <h3 class="edu-degree">BTech, Information Technology</h3>
-                        <p class="edu-school">SASTRA University, Thanjavur</p>
-                        <p class="edu-meta">2011 – 2015</p>
-                    </div>
-                </div>
+                <time class="entry-date">Jan 2017 &ndash; Apr 2017</time>
             </div>
-
-            <div class="pub-card">
-                <div class="pub-card-icon"><i class="fa-solid fa-book-open"></i></div>
-                <div class="pub-card-body">
-                    <h3 class="pub-title">Publication</h3>
-                    <p class="pub-venue">Indian Journal of Science &amp; Technology (INDJST)</p>
-                    <p class="pub-name">
-                        "Enhancing Security for Data Hiding in Radiographic Images using Burrows Wheeler Transform"
-                    </p>
-                    <a href="https://goo.gl/US9GN8" target="_blank" rel="noopener noreferrer" class="link-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Read the paper
-                    </a>
-                </div>
-            </div>
-
+            <ul class="entry-bullets">
+                <li>Tutored 80 students in writing clean code in ACL2s, a LISP dialect</li>
+                <li>Supported student understanding of programming paradigms and logical reasoning</li>
+            </ul>
         </div>
-    </div>
-</section>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Software Engineer Intern</h3>
+                    <p class="entry-org"><a href="https://www.cleanharbors.com/" target="_blank" rel="noopener noreferrer">Clean Harbors Inc.</a> &middot; Boston, US</p>
+                </div>
+                <time class="entry-date">Jul 2016 &ndash; Dec 2016</time>
+            </div>
+            <ul class="entry-bullets">
+                <li>Initiated development of an internal analytics application to monitor employee work expenses &mdash; middleware in C#, frontend in AngularJS, database in MS-SQL</li>
+                <li>Reduced data storage by 30% with a web app that replaced a manual two-team workflow, cutting effort by 95%</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Research Assistant</h3>
+                    <p class="entry-org"><a href="https://www.northeastern.edu/games/" target="_blank" rel="noopener noreferrer">Playable Innovative Technologies Lab, Northeastern University</a> &middot; Boston, US</p>
+                </div>
+                <time class="entry-date">Jan 2016 &ndash; Jul 2016</time>
+            </div>
+            <ul class="entry-bullets">
+                <li>Built and deployed a cloud application using the MEAN stack behind Nginx to control gameplay, scores, levels, feedback, and payments</li>
+                <li>Designed a RESTful logging service for gameplay data with Node.js and MongoDB; exported research data via Python scripts</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Software Developer Intern</h3>
+                    <p class="entry-org"><a href="https://www.visualbi.com/" target="_blank" rel="noopener noreferrer">Visual BI Solutions</a> &middot; Chennai, IN</p>
+                </div>
+                <time class="entry-date">Dec 2014 &ndash; Apr 2015</time>
+            </div>
+            <ul class="entry-bullets">
+                <li>Replaced a manual staff clock-in system with a fully automated web application</li>
+                <li>Extended SAP Lumira with new data visualizations (CVOM) and data access extensions for live analysis</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Research Assistant</h3>
+                    <p class="entry-org">School of Computing, SASTRA University &middot; Thanjavur, IN</p>
+                </div>
+                <time class="entry-date">Aug 2013 &ndash; Jul 2014</time>
+            </div>
+            <ul class="entry-bullets">
+                <li>Designed a novel steganography algorithm using Burrows&ndash;Wheeler Transform to improve image data-hiding security</li>
+                <li>Researched compression algorithms for data compaction; findings published in INDJST</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+        <h2 class="section-heading">Education</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Master of Science, Computer Science</h3>
+                    <p class="entry-org">Northeastern University &middot; Boston, US</p>
+                    <p class="entry-note">Specialisation: Software Development, Machine Learning &amp; Big Data &middot; GPA 3.8 / 4.0</p>
+                </div>
+                <time class="entry-date">2015 &ndash; 2017</time>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <div>
+                    <h3 class="entry-role">Bachelor of Technology, Information Technology</h3>
+                    <p class="entry-org">SASTRA University &middot; Thanjavur, IN</p>
+                </div>
+                <time class="entry-date">2011 &ndash; 2015</time>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="divider">
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="section-heading">Skills</h2>
+        <div class="skills-list">
+            <div class="skill-group">
+                <span class="skill-group-label">Languages</span>
+                <span class="skill-items">JavaScript &amp; Node.js, Python, Java, C#, SQL</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Frameworks</span>
+                <span class="skill-items">React, AngularJS, Express.js, ASP.NET</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Cloud &amp; DevOps</span>
+                <span class="skill-items">AWS (Lambda, IoT Core), Docker, Nginx, Git</span>
+            </div>
+            <div class="skill-group">
+                <span class="skill-group-label">Data</span>
+                <span class="skill-items">MongoDB, MS-SQL, Apache Spark, MapReduce, Informatica ETL</span>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- PUBLICATIONS & PATENTS -->
+    <section id="publications" class="section">
+        <h2 class="section-heading">Publications &amp; Patents</h2>
+
+        <div class="entry">
+            <span class="pub-type">Publication</span>
+            <h3 class="pub-title">Enhancing Security for Data Hiding in Radiographic Images using Burrows Wheeler Transform</h3>
+            <p class="pub-meta">
+                <em>Indian Journal of Science and Technology (INDJST)</em>
+                &middot;
+                <a href="https://goo.gl/US9GN8" target="_blank" rel="noopener noreferrer">Read paper &rarr;</a>
+            </p>
+        </div>
+
+        <div class="entry pub-patent">
+            <span class="pub-type">Patent</span>
+            <p class="pub-note">
+                Patent details from LinkedIn could not be retrieved automatically.
+                Please update this section with your patent title, number, and filing date from
+                <a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer">linkedin.com/in/dineshkan</a>.
+            </p>
+        </div>
+
+    </section>
 
 </main>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer class="footer">
     <div class="container footer-inner">
-        <div class="footer-brand">
-            <span class="footer-logo">DK</span>
-            <p>Dinesh Kannan · Software Engineer</p>
-        </div>
-        <ul class="footer-social">
-            <li>
-                <a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.github.com/kdin" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:dinesh.kannan@gmail.com" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="footer-copy">&copy; 2024 Dinesh Kannan. All rights reserved.</p>
+        <span>Dinesh Kannan</span>
+        <span class="footer-links">
+            <a href="https://www.linkedin.com/in/dineshkan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            &middot;
+            <a href="https://github.com/kdin" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </span>
     </div>
 </footer>
 
