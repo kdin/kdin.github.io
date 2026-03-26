@@ -309,16 +309,12 @@ img { display: block; max-width: 100%; }
     color: var(--ink-light);
 }
 .pub-meta a { color: var(--ink-mid); }
-.pub-patent .pub-note {
-    font-size: .85rem;
-    color: var(--ink-light);
-    font-style: italic;
-    border: 1px dashed var(--border);
-    padding: .75rem 1rem;
-    border-radius: 3px;
-    line-height: 1.7;
+.pub-desc {
+    font-size: .875rem;
+    color: var(--ink-mid);
+    line-height: 1.75;
+    margin-top: .4rem;
 }
-.pub-patent .pub-note a { color: var(--ink-mid); }
 
 /* ── FOOTER ──────────────────────────────────────────────────── */
 .footer {
