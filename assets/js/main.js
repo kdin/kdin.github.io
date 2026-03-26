@@ -1,65 +1,74 @@
-jQuery(document).ready(function($) {
+/* ================================================================
+   Dinesh Kannan · Personal Portfolio – main.js
+   ================================================================ */
 
+(function () {
+  'use strict';
 
-    /*======= Skillset *=======*/
-    
-    $('.level-bar-inner').css('width', '0');
-    
-    $(window).on('load', function() {
+  /* ── Nav mobile toggle ──────────────────────────────────────── */
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-        $('.level-bar-inner').each(function() {
-        
-            var itemWidth = $(this).data('level');
-            
-            $(this).animate({
-                width: itemWidth
-            }, 800);
-            
-        });
-
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', function () {
+      const open = navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    
-    /* Bootstrap Tooltip for Skillset */
-    $('.level-label').tooltip();
-    
-    
-    /* jQuery RSS - https://github.com/sdepold/jquery-rss */
-    
-    $("#rss-feeds").rss(
-    
-        //Change this to your own rss feeds
-        "http://feeds.feedburner.com/TechCrunch/startups",
-        
-        {
-        // how many entries do you want?
-        // default: 4
-        // valid values: any integer
-        limit: 3,
-        
-        // the effect, which is used to let the entries appear
-        // default: 'show'
-        // valid values: 'show', 'slide', 'slideFast', 'slideSynced', 'slideFastSynced'
-        effect: 'slideFastSynced',
-        
-        // outer template for the html transformation
-        // default: "<ul>{entries}</ul>"
-        // valid values: any string
-        layoutTemplate: "<div class='item'>{entries}</div>",
-        
-        // inner template for each entry
-        // default: '<li><a href="{url}">[{author}@{date}] {title}</a><br/>{shortBodyPlain}</li>'
-        // valid values: any string
-        entryTemplate: '<h3 class="title"><a href="{url}" target="_blank">{title}</a></h3><div><p>{shortBodyPlain}</p><a class="more-link" href="{url}" target="_blank"><i class="fa fa-external-link"></i>Read more</a></div>'
-        
+
+    // Close on any link click
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  /* ── Active nav link on scroll ──────────────────────────────── */
+  const sections = document.querySelectorAll('main section[id]');
+  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+
+  function setActiveNav() {
+    var scrollY = window.scrollY + 100;
+    sections.forEach(function (section) {
+      var top    = section.offsetTop;
+      var height = section.offsetHeight;
+      var id     = section.getAttribute('id');
+      if (scrollY >= top && scrollY < top + height) {
+        navAnchors.forEach(function (a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', setActiveNav, { passive: true });
+  setActiveNav();
+
+  /* ── Scroll-reveal for timeline cards & project cards ──────── */
+  var observer;
+  if ('IntersectionObserver' in window) {
+    var style = document.createElement('style');
+    style.textContent =
+      '.reveal { opacity: 0; transform: translateY(24px); transition: opacity .5s ease, transform .5s ease; }' +
+      '.reveal.visible { opacity: 1; transform: none; }';
+    document.head.appendChild(style);
+
+    observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
-    );
-    
-    /* Github Calendar - https://github.com/IonicaBizau/github-calendar */
-    GitHubCalendar("#github-graph", "IonicaBizau");
-    
-    
-    /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "caseyscarborough", selector: "#ghfeed" });
+      });
+    }, { threshold: 0.1 });
 
+    document.querySelectorAll(
+      '.timeline-card, .project-card, .stat-card, .edu-card, .pub-card, .skills-group'
+    ).forEach(function (el) {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  }
 
-});
+})();
